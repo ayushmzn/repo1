@@ -1,11 +1,3 @@
-from datetime import date, timedelta
-def fun(y):
-    d=date(y,1,1)
-    first_sun_date=d+timedelta(days=7-d.isoweekday())
-    while first_sun_date.year == y:
-        yield first_sun_date
-        first_sun_date=first_sun_date+timedelta(days=7)        
-y=int(input("enter a year"))
-pd=fun(y)
-for i in pd:
-    print(i)
+Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+print("hello git!")
